@@ -15,7 +15,7 @@ const Course = ({ id, title, description, deleteCourse, updateCourse }) => {
   };
 
   const updateData = (course) => {
-    fetch(`http://localhost:8080/api/courses/${course.id}`, {
+    fetch(`https://warm-thicket-96197-62fa6f50b94e.herokuapp.com/api/courses/${course.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

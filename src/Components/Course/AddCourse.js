@@ -16,7 +16,7 @@ const AddCourse = () => {
   };
 
   const submitData = () => {
-    fetch("http://localhost:8080/api/courses", {
+    fetch("https://warm-thicket-96197-62fa6f50b94e.herokuapp.com/api/courses", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

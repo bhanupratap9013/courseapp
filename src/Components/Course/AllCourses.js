@@ -11,7 +11,7 @@ const AllCourses = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/courses');
+      const response = await fetch('https://warm-thicket-96197-62fa6f50b94e.herokuapp.com/api/courses');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -23,7 +23,7 @@ const AllCourses = () => {
   };
 
   const deleteCourse = (id) => {
-    fetch(`http://localhost:8080/api/courses/${id}`, {
+    fetch(`https://warm-thicket-96197-62fa6f50b94e.herokuapp.com/api/courses/${id}`, {
       method: 'DELETE',
     })
       .then((response) => {
